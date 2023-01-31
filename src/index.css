@@ -1,5 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.menu-item{
+    @apply px-5 py-1.5 my-auto bg-gray-100 rounded-full mx-3 cursor-pointer;
 }
