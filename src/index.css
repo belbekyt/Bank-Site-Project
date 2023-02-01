@@ -8,6 +8,57 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background-green-color: #1f332c;
+    --light-green-color: #98f576;
+}
+
+.background-green{
+    background-color: var(--background-green-color);
+}
+
+.light-green{
+    background-color: var(--light-green-color);
+}
+
 .menu-item{
-    @apply px-5 py-1.5 my-auto bg-gray-100 rounded-full mx-3 cursor-pointer;
+    @apply px-7 py-2 my-auto mx-1 md:mx-3 text-white cursor-pointer;
+}
+
+.menu-item::after{
+    transition: 0.5s;
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: var(--light-green-color);
+}
+
+.menu-item:hover::after{
+    width: 110%;
+}
+
+.header-button{
+    @apply w-36 h-10 font-bold rounded-lg text-black bg-slate-400;
+    background-color: var(--light-green-color);
+}
+
+.span-text-green{
+    color: var(--light-green-color);
+}
+
+.span-text-underline{
+    text-decoration: underline var(--light-green-color);
+}
+
+.advertise-block{
+    @apply my-5 mx-auto text-center;
+}
+
+.advertise-text{
+    @apply text-xl sm:text-2xl md:text-3xl font-bold;
+}
+
+.advertise-icon{
+    @apply text-2xl sm:text-3xl md:text-4xl mt-3;
 }
