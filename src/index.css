@@ -39,7 +39,7 @@
 }
 
 .header-button{
-    @apply w-36 h-10 font-bold rounded-lg text-black bg-slate-400;
+    @apply w-36 h-10 font-bold rounded-lg text-black bg-slate-400 duration-300 hover:bg-green-900 hover:text-white;
     background-color: var(--light-green-color);
 }
 
@@ -78,4 +78,12 @@
 
 .contact-element-heading{
     @apply text-2xl my-2 font-bold span-text-green;
+}
+
+.offers-card{
+    @apply w-3/4 mb-14 rounded overflow-hidden cursor-pointer bg-white duration-700 hover:bg-slate-600 hover:text-white md:w-2/3 lg:w-80 xl:w-3/12;
+}
+
+.offers-card-text{
+    @apply text-xl mb-2 font-semibold;
 }
